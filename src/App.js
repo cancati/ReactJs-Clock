@@ -21,15 +21,16 @@ class App extends Component {
     let secondRatio = currentDate.getSeconds() / 60;
     let minuteRatio = (secondRatio + currentDate.getMinutes()) / 60;
     let hourRatio = (minuteRatio + currentDate.getHours()) / 12;
+
+
     this.setState({
-      secondRatio: (secondRatio = currentDate.getSeconds() / 60),
+      secondRatio: secondRatio
     });
     this.setState({
-      minuteRatio: (minuteRatio =
-        (secondRatio + currentDate.getMinutes()) / 60),
+      minuteRatio: minuteRatio
     });
     this.setState({
-      hourRatio: (hourRatio = (minuteRatio + currentDate.getHours()) / 12),
+      hourRatio: hourRatio
     });
   };
 
